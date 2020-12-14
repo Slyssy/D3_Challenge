@@ -6,8 +6,8 @@ const svgWidth = 800
 const margin = {
     top: 50,
     right: 50,
-    bottom: 50,
-    left: 50
+    bottom: 100,
+    left: 100
   }
 
 // Defining Chart area inside of SVG
@@ -18,7 +18,7 @@ const chartWidth = svgWidth - margin.left - margin.right
 const minRadius = 16
 const maxRadius = 16
 
-const svg = d3.select("body").append("svg")
+const svg = d3.select("#scatter").append("svg")
   .attr("height", svgHeight)
   .attr("width", svgWidth)
 
@@ -47,18 +47,21 @@ const svg = d3.select("body").append("svg")
     const yAxis = d3.axisLeft(y)
     const xAxis = d3.axisBottom(x)
 
+// Setting up y axis label
     chartG.append("g")
         .call(yAxis)
     
-    // const labelAreaY = svg
-    // .append("g")
-    // .attr(
-    //     "transform",
-    //     `translate(${svgHeight / 2}, ${svgWidth - margin.left + 20})`
-    // );
+    const labelAreaY = svg
+    .append("g")
+    .attr(
+        "transform",
+        `translate( ${svgWidth - margin.left - 645}, ${svgHeight / 2})`,
+    )
+    
 
-    // labelAreaY.append("text").attr("stroke", "#000000").text("(%)Smokers");
+    labelAreaY.append("text").attr("stroke", "#000000").attr("transform", "rotate(-90)").text("(%) Smokers");
 
+// Setting up x axis label
     chartG.append("g")
         .attr("transform", `translate(0, ${chartHeight})`)
         .call(xAxis)
@@ -91,3 +94,5 @@ const svg = d3.select("body").append("svg")
             .attr("dy", ".3em")
             .attr("text-anchor", "middle")    
   })
+
+    
