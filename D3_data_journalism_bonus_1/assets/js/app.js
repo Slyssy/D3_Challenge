@@ -148,7 +148,7 @@ const xScale = (data, selection) =>{
   console.log(selectionData)
 
   const x = d3.scaleLinear()
-    .domain ([d3.min(selectionData), d3.max(selectionData)])
+    .domain ([d3.min(selectionData) * .8, d3.max(selectionData) * 1.2])
     .range  ([0, chartWidth])
 
     return(x)
