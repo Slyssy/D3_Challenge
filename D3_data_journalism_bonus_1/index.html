@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>D3Times</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/d3Style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <h1>D3Times</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <div id="scatter">
+            <!-- We append our chart here. -->
+            <svg></svg>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <div class="article">
+            <h3>Correlations Discovered Between Health Risks and Income</h3>
+            <p>
+              In the chart indicated above, we take a closer look at the
+              correlations between smoking and poverty. In particular, we are
+              looking at the corelation between those reported to be living in
+              poverty and those reported to smoke.
+            </p>
+
+            <p>
+              There does appear to be a correlation between the percent of those
+              reported to smoke and the percent living in poverty. As you can
+              see, states with higher reported poverty levels also tend to have
+              a higher number of residents that smoke. Additionally, a third
+              piece of information was used in constructing this chart. The
+              bubble sizes are determined by the reported average income. The
+              smaller the reported income, the smaller the bubble.
+            </p>
+
+            <p>
+              There are obviuous limitations to this data; however. First, we do
+              not know what they mean when they say "smoke". Are they referring
+              to smoking tobacco or any type of smoking? Also, does this data
+              include the use of any tobacco products such as chewing tobacco,
+              or they only looking at those that smoke cigarrettes. Finally, do
+              these numbers include those that might use electronic cigarrettes.
+              That being said, there does appear to be evidence that those
+              states reporting a higher number of smokers also report higher
+              number of residents living in poverty.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-->
+    <div id="footer">
+      <p>The Coding Boot Camp&copy;2016</p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>
