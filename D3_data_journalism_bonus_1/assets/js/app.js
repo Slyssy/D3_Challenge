@@ -268,12 +268,12 @@ d3.csv("assets/data/data.csv").then((data) => {
 
   // circleG.append("circle").attr("r", (d) => size(parseInt(d.income)));
 
-  circleG
+  const circle_text = circleG
     .append("text")
     .text((d) => d.abbr)
     .attr("stroke", "#FFFFFF")
     .attr("fill", "#FFFFFF")
-    .attr("dy", ".2em")
+    .attr("dy", ".3em")
     .attr("text-anchor", "middle");
     });
 
