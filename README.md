@@ -2,6 +2,7 @@
 ## Repository Table of Contents
 * D3_data_journalism: This folder contains the html, javascript, csv and css files used to complete the mandatory piece to this exercise.
 * D3_data_journalism_bonus_1: This folder contains my attempt to complete the first bonus piece to this exercise. The file layout in this directory is the same as above.
+* images: This folder contains screenshots that are displayed in the README.
 ### Primary Exercise
 In this exercise, I used d3 to visualize data from the US Census Bureau to determine correlations between health risks and demographic factors. In particular, I looked at smoking as compaired to the poverty rate in each of the 50 US states. I have included a screenshot of that visualization below.
 
