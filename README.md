@@ -12,5 +12,5 @@ In addition to comparing the percentage of those that smoked to the percentage o
 ### Bonus 1
 In this part of the exercise I attempted to add different labels to the x axis that could be used to transition between different comparisons. I was able to get pieces of this working, but I could not figure out how to do this and keep the labels inside the bubbles. Unfortunately, I do not have time right now to focus on this due to family priorities, but I included it here so I can continue to work on this at a later time. Below are screenshots of what I was able to get to work. The first screenshot is of the image shown above (without the labels), and it will transition into the next image which compares % smokers to average age once the user selects.
 
-![Project Screen Shot](Images/d3_bonus_poverty_smokers.png)
-![Project Screen Shot](Images/d3_bonus_age_smokers.png)
+![Project Bonus Screen Shot 1](Images/d3_bonus_poverty_smokers.png)
+![Project Bonus Screen Shot 2](Images/d3_bonus_age_smokers.png)
