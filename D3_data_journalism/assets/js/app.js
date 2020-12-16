@@ -36,7 +36,6 @@ d3.csv("assets/data/data.csv").then((data) => {
   const y = d3
     .scaleLinear()
     .domain([6, d3.max(data.map((d) => parseFloat(d.smokes)))])
-    // invert axis to avoid having to do d3 axis calculations
     .range([chartHeight, 0]);
 
   const x = d3
