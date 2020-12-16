@@ -142,7 +142,7 @@ const xScale = (data, selection) =>{
   let selectionData
   if (selection === "In Poverty (%)"){
     selectionData = data.map(d => parseFloat(d.poverty))
-  } else if (selection === "Age"){
+  } else if (selection === "Average Age"){
     selectionData = data.map(d => parseFloat(d.age))
   }
   console.log(selectionData)
@@ -168,7 +168,7 @@ const renderCircles = (circleG, newxScale, selection) => {
 
   if (selection === "In Poverty (%)"){
     selectionDataKey = "poverty"
-  } else if (selection === "Age"){
+  } else if (selection === "Average Age"){
     selectionDataKey = "age"
   }
   circleG
@@ -242,9 +242,9 @@ d3.csv("assets/data/data.csv").then((data) => {
   labelAreaX
     .append("text")
     .attr("stroke", "#000000")
-    .text("Age")
+    .text("Average Age")
     .attr("dy", 20)
-    .attr("dx", 30)
+    .attr("dx", 3)
     
   labelAreaX.selectAll("text")
     .on("click", function() {      
