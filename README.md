@@ -5,7 +5,7 @@
 ### Primary Exercise
 In this exercise, I used d3 to visualize data from the US Census Bureau to determine correlations between health risks and demographic factors. In particular, I looked at smoking as compaired to the poverty rate in each of the 50 US states. I have included a screenshot of that visualization below.
 
-![Project Screen Shot](Images/d3_challenge.png)
+![Project Screen Shot](images/d3_challenge.png)
 
 In addition to comparing the percentage of those that smoked to the percentage of those living in poverty, I included the average income which is used to determine th bubble size. The higher average income, the larger the bubble and vice versa. When viewed like this, it is quite easy to see that those living in poverty and making a lower average income are more likely to use tobacco products.
 
