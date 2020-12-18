@@ -323,19 +323,23 @@ d3.csv("assets/data/data.csv").then((data) => {
     .data(data)
     .enter()
     .append("circle")
+    .attr("class", "circle")
     .attr("cx", d =>x(parseFloat(d.poverty)))
     .attr("cy", d =>y(parseFloat(d.smokes)))
     .attr("fill", "#62bbd1")
+    .attr("opacity", "0.75")
     .attr("r", 12);
 
   // circleG.append("circle").attr("r", (d) => size(parseInt(d.income)));
+  
 
-  const circle_text = circleG
+  circle_text = circleG
     .append("text")
     .text((d) => d.abbr)
+    .attr("class", "circleText")
     .attr("stroke", "#FFFFFF")
     .attr("fill", "#FFFFFF")
-    .attr("dy", ".3em")
+    .attr("dy", "10px")
     .attr("text-anchor", "middle");
     });
 
